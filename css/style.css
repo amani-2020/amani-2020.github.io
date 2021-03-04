@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/body.jpg);
+  color: #000305;
+  font-size: 87%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  margin: 10px auto;
+  width: 90%;
+}
+/*.............socialNetworksLinks............*/
+#socialNetworksLnks {
+  position: fixed;
+  top: 300px;
+  right: 0;
+}
+
+#socialNetworksLnks div a {
+  margin: 4px 0 4px;
+}
+
+#socialNetworksLnks div a img {
+  border: none;
+}
+/*....................links................*/
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #444650;
+}
+
+a:hover,
+a:active {
+  color: #f58233;
+}
+
+/*...................... Main Header..................... */
+
+.mainheader img {
+  width: 300px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.mainheader > div {
+  background-color: #262933;
+  border-radius: 5px 5px 0 0;
+}
+
+.mainheader nav {
+  background-color: #262933;
+  height: 50px;
+  border-radius: 0 0px 5px 5px;
+  /* --webkit-border-radius: 5px;
+  -moz-border-radius: 5px; */
+  margin-bottom: 5px;
+}
+
+.mainheader nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.mainheader nav ul li {
+  display: inline;
+}
+
+.mainheader a:link,
+.mainheader a:visited {
+  color: white;
+  padding: 15px 30px;
+  display: inline-block;
+  height: 20px;
+}
+
+.mainheader a:hover,
+.mainheader a:active {
+  color: white;
+  background-color: #f58233;
+  text-shadow: none;
+}
+
+/*...................... Main content..................... */
+
+mark {
+  font-weight: bold;
+  line-height: large;
+}
+
+h2 {
+  background-color: skyblue;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
+
+.mainContent {
+  width: 70%;
+  float: left;
+}
+
+.top-content {
+  background-color: #fff;
+  padding: 3%;
+  margin-top: 3%;
+  border-radius: 5px;
+  --webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.post-info {
+  font-size: 90%;
+  color: #999;
+  font-style: italic;
+  margin-top: -1px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  background-color: white;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-content: flex-start;
+  margin-bottom: 5px;
+}
+.content article {
+  padding: 1%;
+  border-bottom: 2px #eee solid;
+}
+
+/*...................... SideBar..................... */
+
+.theSidebar {
+  width: 24%;
+  margin: 2% 0 0 2%;
+  float: left;
+  padding: 2%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  --webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.flow {
+  overflow: auto;
+}
+button {
+  background-color: #084a69;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*...................... Footer..................... */
+
+.footer {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  background-color: #262933;
+  height: 60px;
+  border-radius: 5px;
+  /* --webkit-border-radius: 5px;
+  -moz-border-radius: 5px; */
+}
+.footer p {
+  width: 90%;
+  text-align: center;
+  color: white;
+}
+.post-img {
+  width: 100%;
+}
+figure {
+  margin: 25px 0;
+  font-size: 80%;
+  color: #999;
+}
+
+/* .......................................Css Media.................. */
+
+@media screen and (max-width: 900px) {
+  .body {
+    width: 90%;
+    font-size: 95%;
+    /* clear: left; */
+  }
+  /*................ Main Header media..................... */
+  .mainheader nav {
+    height: 300px;
+  }
+
+  .mainheader a:link,
+  .mainheader a:visited {
+    display: block;
+  }
+
+  /*...................... Main content. media.................... */
+  .mainContent {
+    width: 100%;
+    /* float: left; */
+  }
+  /*...................... SideBar media..................... */
+  .theSidebar {
+    width: 92%;
+    padding: 4%;
+    margin: 10px 0;
+  }
+}
